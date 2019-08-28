@@ -1,7 +1,8 @@
 <?php
+
 //include_once "../poo.php";
 // include_once "../index.php";
-
+//include_once "../funciones.php";
 
 class Persona
 {
@@ -18,11 +19,11 @@ class Persona
         return "NOMBRE:" . $this->_nombre . ";". "APELLIDO:" . $this->_apellido . ";";
     }
 
-    public function toJson(){
-      return  json_encode($this);
+    public function toJson($array){
+      return  json_encode($array);
     }
 
     public function toObject(){
-        return json_decode();
+        return json_decode($this);
     }
 }

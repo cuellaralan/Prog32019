@@ -1,3 +1,5 @@
 
 https://diego.com.es/modificadores-y-herencia-de-clases-en-php
 
+https://web.archive.org/web/20080707052007/http://www.phpriot.com/articles/intro-php-sessions/7
+

@@ -2,10 +2,8 @@
 session_start();
 //session_unset();
 //Variables Super Globales
-
-
 if(!isset($_SESSION["arrhay"])){
-    $_SESSION["arrhay"] = array();
+    $_SESSION["arrhay"] = array();//Inicializa el array 
 }
 
 //$_SESSION["arrhay"] =;
@@ -83,6 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_nombre = $_POST["nombre"];
         $_apellido = $_POST["apellido"];
         
+        //Preparar para usar metodos por POST
         $alumno = new Alumno($_nombre, $_apellido);   
         // $arr = [];
         // $arr = $_SESSION["arrhay"];
@@ -95,14 +94,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     if (isset($_GET["nombre"]) && isset($_GET["apellido"])) {
-        
+        //Preparar para usar metodos por GET
         $i=0;
         //$cant = $_SESSION["arrhay"];
         while ($i < $cant) {
             
             $i++;
             //$alumno;
-            $alumno->toObject();
+            //$alumno->toObject();
             
         }
     }
